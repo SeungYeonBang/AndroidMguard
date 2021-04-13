@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DatePic"
+    android:padding="5dp">
+    <TextView
+        android:id="@+id/tvSelectDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="70dp"
+        android:layout_marginTop="150dp"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:text="선택 날짜 : "/>
+    <TextView
+        android:id="@+id/tvCalCho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tvSelectDate"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="20sp"
+        android:textColor="#000"/>
+    <CalendarView
+        android:id="@+id/calenderCho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCalCho"/>
+    <Button
+        android:id="@+id/btnCalCho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="선택"
+        android:textColor="#fff"
+        android:backgroundTint="#6799FF"
+        android:layout_below="@+id/calenderCho"
+        android:layout_alignParentRight="true"/>
+
+
+
+</RelativeLayout>

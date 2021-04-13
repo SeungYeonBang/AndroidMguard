@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".claender.CalenderFragment">
+
+    <CalendarView
+        android:id="@+id/mainCalenderView"
+        android:layout_width="match_parent"
+        android:layout_height="309dp"
+        android:layout_gravity="top"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tvCalResult"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/mainCalenderView"/>
+    <TextView
+        android:id="@+id/tvNoCal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textSize="25sp"
+        android:layout_below="@+id/tvCalResult"
+        android:text="목 록 없 음"/>
+    <ListView
+        android:id="@+id/amountList"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/tvCalResult"/>
+
+    <TextView
+        android:id="@+id/tvSumEName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="지출 합계"
+        android:textColor="@color/black"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="18sp"
+        android:layout_above="@id/tvSumIName"/>
+    <TextView
+        android:id="@+id/tvSumE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:textSize="18sp"
+        android:layout_toRightOf="@+id/tvSumEName"
+        android:layout_above="@+id/tvSumI"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="130dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvSumIName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="수입 합계"
+        android:textColor="@color/black"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/tvSumI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0000ff"
+        android:layout_toRightOf="@+id/tvSumIName"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="130dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="18sp"
+        android:gravity="center"/>
+
+</RelativeLayout>
